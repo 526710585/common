@@ -1,0 +1,37 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack  --config ./build/webpack.test.config --mode production --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/526710585/common.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/526710585/common/issues"
+  },
+  "homepage": "https://github.com/526710585/common#readme",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/runtime": "^7.12.5",
+    "core-js": "^3.8.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.15.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^4.0.2",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0"
+  }
+}
