@@ -10,7 +10,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     ],
   },
   plugins: [
-    // new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(),
 
   ],
   // 优化项
