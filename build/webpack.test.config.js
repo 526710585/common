@@ -1,9 +1,9 @@
 process.env.NODE_ENV = 'testProduction';
-const { merge } = require('webpack-merge');
+const getconf = require('./methods/getconf')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const baseWebpackConfig = require('./webpack.base.config');
 
-const webpackConfig = merge(baseWebpackConfig, {
+const webpackConfig = getconf(baseWebpackConfig, {
   mode: 'production',
   module: {
     rules: [
@@ -18,4 +18,5 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
 });
 
+console.log(webpackConfig);
 module.exports = webpackConfig;
