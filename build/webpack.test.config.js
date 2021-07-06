@@ -11,7 +11,6 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     new CleanWebpackPlugin(),
-
   ],
   // 优化项
   optimization: {

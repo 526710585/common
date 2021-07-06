@@ -1,19 +1,19 @@
-const arr = [
+const configArr = [
   {
     libraryTarget:'umd',
     globalObject: 'this',
     name:'umd'
   },
   {
-    libraryTarget:'umd',
-    library: 'Common'
+    libraryTarget:'var',
+    name:'window'
   },
   {
-    libraryTarget:'umd',
-    library: 'Common'
-  }
+    libraryTarget:'module',
+    name:'esm'
+  },
 ]
 const configObj = {
   library:'common'
 }
-module.exports = {}
+module.exports = {configArr,configObj}
