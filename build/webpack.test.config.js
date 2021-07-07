@@ -10,11 +10,11 @@ const webpackConfig = getconf(baseWebpackConfig, {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
   ],
   // 优化项
   optimization: {
-
+    minimize: false,
   },
 });
 

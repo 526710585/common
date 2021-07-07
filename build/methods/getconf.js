@@ -21,10 +21,13 @@ function getconf(baseConfig,setConfig){
       if(subitem.libraryTarget!=='module'){
         obj.output.library = configObj.library;
       }
-      obj.output.filename = `${configObj.library}.${subitem.name}.js`;
+      if(subitem.libraryTarget==='umd'){
+        obj.output.libraryExport = 'default'
+      }
       if(subitem.globalObject){
         obj.output.globalObject = subitem.globalObject;
       }
+      obj.output.filename = `${configObj.library}.${subitem.name}.js`;
       obj.output.path = path.resolve(__dirname, `../../dist/${item}`)
       setArr.push(obj)
     })

@@ -2,8 +2,8 @@ process.env.NODE_ENV = 'testProduction';
 const getconf = require('./methods/getconf')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const baseWebpackConfig = require('./webpack.base.config');
-
-const webpackConfig = getconf(baseWebpackConfig, {
+const { merge } = require('webpack-merge');
+const webpackConfig = merge(baseWebpackConfig, {
   mode: 'production',
   module: {
     rules: [

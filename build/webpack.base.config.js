@@ -4,7 +4,7 @@ const config = require('../config');
 module.exports = {
   mode: 'base',
   entry: {
-    'index': './src/index.js',
+    'index': './src/game/hpjy/index.js',
   },
   output: {
     path: config.build.assetsRoot,
