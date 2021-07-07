@@ -5,7 +5,7 @@ const baseWebpackConfig = require('./webpack.base.config');
 
 const webpackConfig = getconf(baseWebpackConfig, {
   mode: 'production',
-  devtool:'none',
+  // devtool:'none',
   module: {
     rules: [
     ],

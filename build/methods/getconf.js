@@ -27,7 +27,7 @@ function getconf(baseConfig,setConfig){
       if(subitem.globalObject){
         obj.output.globalObject = subitem.globalObject;
       }
-      obj.output.filename = `${configObj.library}.${subitem.name}.js`;
+      obj.output.filename = `${item}.${configObj.library}.${subitem.name}.js`;
       obj.output.path = path.resolve(__dirname, `../../dist/${item}`)
       setArr.push(obj)
     })
