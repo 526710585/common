@@ -3,7 +3,11 @@ import Common from "../../core/index";
 class wzry extends Common{
   constructor(){
     super()
-    this.name = 'wzry'
+    this.name = 'hpyj'
+    this.init()
+  }
+  init(){
+    console.log(`my name :${this.name}`);
   }
 }
 

@@ -40,8 +40,6 @@ function getconf(baseConfig,setConfig){
   }
   const returnArr = margeArrConfig(_baseConfig,setArr)
   //输出配置
-  console.log(returnArr);
-
   return returnArr;
 }
 

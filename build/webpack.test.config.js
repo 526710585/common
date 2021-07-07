@@ -4,19 +4,17 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const baseWebpackConfig = require('./webpack.base.config');
 
 const webpackConfig = getconf(baseWebpackConfig, {
-  mode: 'production',
+  mode: 'testproduction',
+  devtool:'inline-source-map',
   module: {
     rules: [
     ],
   },
   plugins: [
-    // new CleanWebpackPlugin(),
   ],
   // 优化项
   optimization: {
     minimize: false,
   },
 });
-
-console.log(webpackConfig);
 module.exports = webpackConfig;
