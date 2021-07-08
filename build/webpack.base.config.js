@@ -4,7 +4,7 @@ const config = require('../config');
 module.exports = {
   mode: 'base',
   entry: {
-    'index': './src/game/hpjy/index.js',
+    'index': './src/core/index.js',
   },
   output: {
     path: config.build.assetsRoot,
@@ -21,7 +21,8 @@ module.exports = {
     // },
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.js$/,
         exclude: [/node_modules/],
         loader: 'eslint-loader',
@@ -48,6 +49,6 @@ module.exports = {
   plugins: [
   ],
   experiments:{
-    outputModule: true,
+    // outputModule: true,
   }
 };

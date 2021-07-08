@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build-for-test": "webpack  --config ./build/webpack.test.config --mode production --progress",
-    "build-for-prod":"webpack  --config ./build/webpack.prod.config --mode production --progress"
+    "build-for-prod":"webpack  --config ./build/webpack.prod.config --mode production --progress",
+    "build-for-base":"webpack  --config ./build/webpack.base.config --mode production --progress"
   },
   "repository": {
     "type": "git",

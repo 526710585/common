@@ -14,11 +14,14 @@ function getconf(baseConfig,setConfig){
     configArr.forEach(subitem=>{
       const obj = {
         entry:{},
-        output:{}
+        output:{},
+        experiments:{}
       }
       obj.entry.index = `./src/game/${item}/index.js`;
       obj.output.libraryTarget = subitem.libraryTarget;
-      if(subitem.libraryTarget!=='module'){
+      if(subitem.libraryTarget==='module'){
+        obj.experiments.outputModule = true;
+      }else{
         obj.output.library = configObj.library;
       }
       if(subitem.libraryTarget==='umd'){

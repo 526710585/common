@@ -10,7 +10,7 @@ const configArr = [
   },
   {
     libraryTarget:'module',
-    name:'esm'
+    name:'browser'
   },
 ]
 const configObj = {
